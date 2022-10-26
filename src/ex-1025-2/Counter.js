@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './Counter.css'
 
 function Counter() {
   const [total, setTotal] = useState(0)
@@ -8,6 +9,7 @@ function Counter() {
     <>
       <h1>{total}</h1>
       <button
+        className="btn"
         onClick={() => {
           setTotal(total + 1)
         }}
