@@ -3,8 +3,14 @@ import JsxValue from './ex-1026-1/JsxValue'
 import StudentList from './ex-1026-2/StudentList'
 import Menu from './pratice/Q1/Menu'
 import Demo from './ex-1026-3/Demo'
+import Parent from './ex-1027-1/Parent'
 
 export const examples = [
+  {
+    name: '1027-1 prop屬性',
+    path: './ex-1027-1/Parent',
+    component: Parent,
+  },
   {
     name: '計數器',
     path: './ex-1025-2/Counter',
