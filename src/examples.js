@@ -4,15 +4,27 @@ import StudentList from './ex-1026-2/StudentList'
 import Menu from './pratice/Q1/Menu'
 import Demo from './ex-1026-3/Demo'
 import Parent from './ex-1027-1/Parent'
+import ParentPropTypes from './ex-1027-2/Parent'
+import ParentFlow from './ex-1027-3/Parent'
 
 export const examples = [
+  {
+    name: '1027-3 ParentFlow三種資料流',
+    path: './ex-1027-3/Parent',
+    component: ParentFlow,
+  },
+  {
+    name: '1027-2 PropTypes屬性',
+    path: './ex-1027-2/Parent',
+    component: ParentPropTypes,
+  },
   {
     name: '1027-1 prop屬性',
     path: './ex-1027-1/Parent',
     component: Parent,
   },
   {
-    name: '計數器',
+    name: 'ex-1025-2 計數器',
     path: './ex-1025-2/Counter',
     component: Counter,
   },
@@ -27,7 +39,7 @@ export const examples = [
     component: StudentList,
   },
   {
-    name: '練習Ｑ1',
+    name: 'pratice 練習Ｑ1',
     path: './pratice/Q1/Menu',
     component: Menu,
   },
