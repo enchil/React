@@ -11,8 +11,14 @@ import HTML5Form from './ex-1028-2/HTML5Form'
 import BMI from './ex-1031-1/BMI'
 import BirthSelect from './ex-1031-2/BirthSelect'
 import TodoApp from './ex-1031-3/TodoApp'
+import TodoApphard from './ex-1031-3/TodoApphard'
 
 export const examples = [
+  {
+    name: '1031-3 Todo List hard 可編輯儲存',
+    path: './ex-1031-3/TodoApphard',
+    component: TodoApphard,
+  },
   {
     name: '1031-3 Todo List',
     path: './ex-1031-3/TodoApp',
