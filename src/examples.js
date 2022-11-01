@@ -12,8 +12,14 @@ import BMI from './ex-1031-1/BMI'
 import BirthSelect from './ex-1031-2/BirthSelect'
 import TodoApp from './ex-1031-3/TodoApp'
 import TodoApphard from './ex-1031-3/TodoApphard'
+import TodoAppclean from './ex-1031-3/TodoAppclean'
 
 export const examples = [
+  {
+    name: '1031-4 Todo List clean 拆元件整理',
+    path: './ex-1031-3/TodoAppclean',
+    component: TodoAppclean,
+  },
   {
     name: '1031-3 Todo List hard 可編輯儲存',
     path: './ex-1031-3/TodoApphard',
