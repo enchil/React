@@ -13,8 +13,19 @@ import BirthSelect from './ex-1031-2/BirthSelect'
 import TodoApp from './ex-1031-3/TodoApp'
 import TodoApphard from './ex-1031-3/TodoApphard'
 import TodoAppclean from './ex-1031-3/TodoAppclean'
+import MultipleInput from './ex-1101-1/MultipleInput'
+import HTML5ValidForm from './ex-1102-1/HTML5ValidForm'
 
 export const examples = [
+  {
+    name: '1102-1 HTML5表單驗證',
+    path: './ex-1102-1/HTML5ValidForm',
+    component: HTML5ValidForm,
+  },{
+    name: '1101-1 多個表單元素共用一個state',
+    path: './ex-1101-1/MultipleInput',
+    component: MultipleInput,
+  },
   {
     name: '1031-4 Todo List clean 拆元件整理',
     path: './ex-1031-3/TodoAppclean',
