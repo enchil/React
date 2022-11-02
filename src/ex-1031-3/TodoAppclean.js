@@ -2,11 +2,11 @@ import { useState } from 'react'
 import './TodoApp.css'
 
 import AddForm from './AddForm'
-import TodoList from './Todolist'
+import TodoList from './Todolist/index'
 
 function TodoAppclean() {
   // 編輯用
-  const [inputEditingValue, setInputEditingValue] = useState('')
+  //const [inputEditingValue, setInputEditingValue] = useState('')
 
   const [todos, setTodos] = useState([
     {
@@ -80,7 +80,16 @@ function TodoAppclean() {
   return (
     <>
       <h1>Todo待辨事項</h1>
+      <span>新增</span>
       <AddForm addTodo={addTodo} />
+      <hr />
+      <input type="text" />
+      <button>搜尋</button>
+      <hr />
+      <span>篩選按鈕：</span>
+      <button>全部</button>
+      <button>未完成</button>
+      <button>已完成</button>
       <TodoList
         todos={todos}
         toggleTodoCompleted={toggleTodoCompleted}
