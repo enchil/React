@@ -23,6 +23,13 @@ function FC() {
     }
   }, [total])
 
+  //模擬WillUnmount
+  useEffect(() => {
+    return () => {
+      console.log('模擬WillUnmount')
+    }
+  }, [])
+
   return (
     <>
       {console.log('render')}

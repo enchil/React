@@ -21,6 +21,11 @@ class CC extends Component {
     }
   }
 
+  componentWillUnmount() {
+    //Component即將從實體DOM階段移除「之前」的時候觸發，然後才移除
+    console.log('componentWillUnmount')
+  }
+
   render() {
     console.log('render')
     return (
