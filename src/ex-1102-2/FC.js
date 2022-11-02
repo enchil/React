@@ -9,6 +9,20 @@ function FC() {
     console.log('模擬DidMount')
   }, [])
 
+  //模擬DidMount+DidUpdate
+  useEffect(() => {
+    //{}當total狀態有改變時，執行這裡的程式碼
+    console.log('模擬DidUpdate')
+  }, [total])
+
+  //模擬DidUpdate 用if控制避開初始值（空[]）
+  useEffect(() => {
+    //{}當total狀態有改變時，執行這裡的程式碼
+    if (total !== 0) {
+      console.log('模擬DidUpdate,用if控制避開初始值（空[]）')
+    }
+  }, [total])
+
   return (
     <>
       {console.log('render')}

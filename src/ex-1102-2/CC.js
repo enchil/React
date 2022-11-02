@@ -3,18 +3,22 @@ import React, { Component } from 'react'
 class CC extends Component {
   constructor() {
     super()
-    this.state = { total: 0 }
+    this.state = { total: 0, name: '' }
     console.log('constructor')
   }
 
   //在render之後才會呼叫componentDidMount
   componentDidMount() {
     console.log('componentDidMount')
+    this.setState({ total: 2 })
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(prevProps, prevState) {
     //可以得到最後改變的state值
     console.log('componentDidUpdate', 'total=', this.state.total)
+    if (prevState.total === 5) {
+      this.setState({ name: 'wayne' })
+    }
   }
 
   render() {
