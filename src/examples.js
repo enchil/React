@@ -15,13 +15,20 @@ import TodoApphard from './ex-1031-3/TodoApphard'
 import TodoAppclean from './ex-1031-3/TodoAppclean'
 import MultipleInput from './ex-1101-1/MultipleInput'
 import HTML5ValidForm from './ex-1102-1/HTML5ValidForm'
+import Lifecycle from './ex-1102-2/Lifecycle'
 
 export const examples = [
+  {
+    name: '1102-2 生命週期方法',
+    path: './ex-1102-2/Lifecycle',
+    component: Lifecycle,
+  },
   {
     name: '1102-1 HTML5表單驗證',
     path: './ex-1102-1/HTML5ValidForm',
     component: HTML5ValidForm,
-  },{
+  },
+  {
     name: '1101-1 多個表單元素共用一個state',
     path: './ex-1101-1/MultipleInput',
     component: MultipleInput,
