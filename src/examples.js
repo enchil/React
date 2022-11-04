@@ -18,8 +18,20 @@ import HTML5ValidForm from './ex-1102-1/HTML5ValidForm'
 import Lifecycle from './ex-1102-2/Lifecycle'
 import User from './ex-1102-3/User'
 import FileUploadSample from './ex-1102-4/FileUploadSample'
+import ImageDemo from './ex-1103-1/ImageDemo'
+import UserDemo from './ex-1103-2/UserDemo'
 
 export const examples = [
+  {
+    name: '1103-2 從伺服器載入資料 分頁 搜尋',
+    path: './ex-1103-2/UserDemo',
+    component: UserDemo,
+  },
+  {
+    name: '1103-1 圖片使用說明',
+    path: './ex-1103-1/ImageDemo',
+    component: ImageDemo,
+  },
   {
     name: '1102-4 圖檔上傳到伺服器',
     path: './ex-1102-4/FileUploadSample',
