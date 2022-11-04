@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
+import './index.scss'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   //<React.StrictMode>
-    <App />
+  <App />
   //</React.StrictMode>
 )
 //在react中，把App render到root，創虛擬dom變成真實的dom

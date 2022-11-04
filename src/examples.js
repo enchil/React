@@ -21,13 +21,20 @@ import FileUploadSample from './ex-1102-4/FileUploadSample'
 import ImageDemo from './ex-1103-1/ImageDemo'
 import UserDemo from './ex-1103-2/UserDemo'
 import UserPage from './ex-1104-1/UserPage'
+import BS5Test from './ex-1104-2/BS5Text'
 
 export const examples = [
+  {
+    name: '1104-2 Bootstrap5 測試',
+    path: './ex-1104-2/BS5Text',
+    component: BS5Test,
+  },
   {
     name: '1104-1 User從伺服載入資料-分頁',
     path: './ex-1104-1/UserPage',
     component: UserPage,
-  },{
+  },
+  {
     name: '1103-2 從伺服器載入資料 分頁 搜尋',
     path: './ex-1103-2/UserDemo',
     component: UserDemo,
